@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  font-size: 20px;
+  font-family: "Ubuntu", sans-serif;
+
+  --theme: #960dfb;
+  --theme-dark: #760ddb;
+
+  --theme-superlight: #f7ebff;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.header {
+  box-shadow: 0 .0625rem .125rem rgba(0,0,0,.075)!important;
+}
+
+.header, .header a.logo {
+  color: var(--dark);
+  text-decoration: none;
+}
+
+.logo-wrapper {
+  font-size: 1.5rem;
+  position: absolute;
+  left: 15px;
+  top: 0.5rem;
+}
+
+.top-utilities {
+  padding-top: 4px;
+  height: 50px;
+}
+
+li.top-social-icon {
+  font-size: 1.125rem;
+  background: var(--theme-superlight);
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  border-radius: 50%;
+  padding-top: 2px
+}
+
+li.top-social-icon a {
+  color: var(--theme);
+  transition: color 0.3s;
+  -webkit-transition: color 0.3s;
+}
+
+li.top-social-icon a:hover, li.top-social-icon a:active {
+  color: var(--theme-dark);
+}
+
+.notice-button {
+  background: var(--theme);
+  color: white;
+  border: 1px solid transparent;
+}
+
+.notice-button:hover, .notice-button:active {
+  background: var(--white);
+  color: var(--theme);
+  border: 1px solid var(--theme);
+}
+
+.att-sect {
+  margin-top: 70px; /* fixed-top does some weird things */
+  overflow: hidden;
+}
+
+.bg-theme {
+  background: var(--theme);
+  background: linear-gradient(60deg, var(--theme-dark) 0%, var(--theme) 70%);
+  padding: 4rem;
+}
+/*
+.att-sect-bg-left {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  right: 0;
+  top: 0;
+  overflow: hidden
+}
+
+.att-sect-bg-right {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  right: 0;
+  top: 0;
+  overflow: hidden
+}
+*/
+.att-sect-bg-left::before {
+  content: "";
+  width: 300px;
+  height: 150px;
+  background: rgba(255,255,255,0.1);
+  position: absolute;
+  left: -90px;
+  top: 0;
+  border-radius: 6px;
+  transform: skew(25deg, -12deg);
+  moz-transform-origin: top left;
+  transform-origin: top left;
+}
+
+.att-sect-bg-left::after {
+  content: "";
+  width: 150px;
+  height: 600px;
+  background: rgba(255,255,255,0.15);
+  position: absolute;
+  left: 0px;
+  top: 30px;
+  border-radius: 4px;
+  transform: skew(-25deg, 10deg);
+  moz-transform-origin: top left;
+  transform-origin: top left;
+}
+
+.att-sect-bg-right::before {
+  content: "";
+  width: 300px;
+  height: 150px;
+  background: rgba(255,255,255,0.1);
+  position: absolute;
+  right: -60px;
+  top: 0;
+  border-radius: 4px;
+  transform: skew(25deg, -10deg);
+  moz-transform-origin: top left;
+  transform-origin: top left;
+}
+
+.att-sect-bg-right::after {
+  content: "";
+  width: 150px;
+  height: 600px;
+  background: rgba(255,255,255,0.15);
+  position: absolute;
+  right: 0px;
+  top: 30px;
+  border-radius: 6px;
+  transform: skew(25deg, 10deg);
+  moz-transform-origin: top left;
+  transform-origin: top left;
+}
+
+.att-sect-content {
+  text-align: center;
+  color: var(--white);
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.att-sect-content header {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.att-sect-tagline {
+  font-size: 1.2rem;
+  color: var(--light);
+}
+
+a.btn {
+  border-radius: 100px;
+}
+
+.att-sect-content .btn:hover {
+  color: var(--theme-dark);
+}
+
+.chevron-right-button {
+  margin-left: 4px;
+  margin-right: 8px;
+  transition: margin 0.3s;
+  -webkit-transition: margin 0.3s;
+}
+
+a:hover .chevron-right-button {
+  margin-left: 12px;
+  margin-right: 0px;
+}
+
+::selection {
+  background: var(--theme);
+  color: var(--white);
+}
+
+.heading {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.text-sect {
+  color: var(--gray);
+}
+
+.display-6 {
+  font-size: 2.2rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+a {
+  color: var(--theme);
+}
+
+a:hover, a:active {
+  color: var(--theme);
+}
+
