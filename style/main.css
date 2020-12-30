@@ -67,8 +67,11 @@ li.top-social-icon a:hover, li.top-social-icon a:active {
   border: 1px solid var(--theme);
 }
 
+.margin-skip-navbar {
+  margin-top: 70px;
+}
+
 .att-sect {
-  margin-top: 70px; /* fixed-top does some weird things */
   overflow: hidden;
 }
 
